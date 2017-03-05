@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+
+.jumbotron {
+	margin-bottom: 0px;
+    color: white;
+    background-image: url("cooking.jpg");
+    background-size: cover;
+    font-family: "Times New Roman", Georgia, Serif;
+    text-align: center;
+}
+
+.page-header {
+	border-bottom: 0px;
+    color: #AE9990;
+}
+
+.navbar-collapse {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 150%;
+}
+.navbar-brand {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 150%;
+}
+
+.container-fluid {
+    color: black;
+    background-color: #252C3E;
+}
+.container-fluid2 {
+    font-family: "Times New Roman", Georgia, Serif;
+    color: black;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.list-group {
+    margin-bottom: 0px;
+}
+
+.panel-group{
+    margin-bottom: 25px;
+    margin-left: 100 px;
+}
+.panel:hover {
+    background-color: #252C3E;
+}
+
+img {
+    vertical-align: middle;
+}
+
+div{
+    display: block;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+body {
+    background-color: #D6DFD9;
+}
+
+footer {
+    font-family: "Times New Roman", Georgia, Serif;
+    color: #252C3E;
+}
