@@ -1,0 +1,22 @@
+Our team number:14 
+
+Our 3 ingredients: 
+Cinnamon 
+Parsnip 
+Marjoram
+
+Important stuff: 
+
+-All pages to be developed using PHP, HTML and CSS - MUST USE BOOTSTRAP
+-A Home page - Welcome message, info and links about other sections etc.
+-An About us page
+-A Common Header (Title and Logo), Footer and Navigation elements on all pages - Please implement using the PHP include tag.
+-An Authentication Page - a simple hardwired authentication - hardcode at least 3 sets of credentials. One for each of you on the team and a third with Username: ct310. The password for this user is provided below.
+-Individual pages for each ingredient sold. For now, these are real pages in the sense there is a *.php file on the server for each ingredient. (see 3 ingredients)
+-Provision for commenting on an ingredient. Comments may only be entered by authenticated users. For Project 1 you need only redisplay the comment temporarily. To be clear, you need not yet build and archival store able to retain comments over time. That requirement will come in Project 2.
+-You need sanitize user input. Refer to this Sanitize and Validate Data with PHP Filters for a nice explanation of how best to sanitize input.
+-Each Ingredient needs a picture, and you must include an acknowledgement with each picture clearly showing the origin of the picture and in so doing indicating your right to use that image.
+-All your pages will carry a disclaimer on the footer in fine print which reads: "This site is part of a CSU CT 310 Course Project." The text "CT 310" will be a link to the course homepage.
+-Have a color palette theme of your choice to maintain consistency and professional look and feel.
+
+Color scheme idea: #252C3E #6E93AA #D6DFD9 #AE9990 #7F6E64
