@@ -12,7 +12,7 @@
                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
                         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
                         <link rel="stylesheet" href="custom.css">
-                            <title>Maddie and Ben's IFY</title>
+                            <title>Authentication</title>
                             
                             </head>
     
@@ -89,7 +89,7 @@
                     <h2><font color=#252C3E> Welcome to our website!</font></h2>
                     <br>
                     <blockquote>
-                        Our ingredients are cinnamon, parsnip and marjoram.
+                        Turn into authentication page.
                     </blockquote>
                     <blockquote>
                         Photographs are stock images from: <a href="https://www.pexels.com" target="new-tab"> Pexels </a>
