@@ -91,7 +91,7 @@
                 
                 <!-- Add Main Content here -->
                 <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8">
-                    <h2><font color=#252C3E> Welcome to our website!</font></h2>
+                    <h2><font color=#252C3E> Marjoram</font></h2>
                     <br>
                     
 					<!---Display comment form if logged in--->
