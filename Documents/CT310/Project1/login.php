@@ -1,3 +1,8 @@
+<?php
+    // Start session
+    session_name("session");
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -88,14 +93,36 @@
                 <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8">
                     <h2><font color=#252C3E> Welcome to our website!</font></h2>
                     <br>
-                    <blockquote>
-                        Turn into authentication page.
+                    <?php if (!isset($_SESSION["loggedin"])) :?>
+						<!--Show login form if not logged in-->
+						<?php if (isset($_POST['uname']) && $_POST['uname'] == "ct310" && (md5($_POST['psw']) == "48f2f942692b08ec9de1ef9ada5230a3")) :?>
+							<?php $_SESSION["loggedin"] = 1; $_SESSION["user"] = $_POST['uname']; $_SESSION["time"] = date("h:i:sa");?>
+						<?php elseif (isset($_POST['uname']) && $_POST['uname'] == "benmertz" && (md5($_POST['psw']) == "1751d9d2ea4ca903f6db2847902db7ef")) :?>
+							<?php $_SESSION["loggedin"] = 1; $_SESSION["user"] = $_POST['uname']; $_SESSION["time"] = date("h:i:sa");?>
+						<?php else : ?>
+							<form action = "#" method="POST" style="border:5px solid #6E93AA; margin-bottom: 25px; padding: 10px;" width:35%;">
+								<div class = "container" style="padding:5px;">
+									<label><b>Username</b></label>
+										<input type="text" placeholder="Enter Username" name="uname">
+								</div>
+						
+								<div class = "container" style="padding:5px;">
+									<label><b>Password</b></label>
+										<input type="password" placeholder="Enter Password" name="psw">
+								</div>
+						
+								<div class = "container" style="padding:15px;">
+									<input type="submit" value="submit">
+								</div>
+							</form>
+						<?php endif; ?>
+					<?php endif; ?>	
+					<br><br>
+					<blockquote>
+						Photographs are stock images from: <a href="https://www.pexels.com" target="new-tab"> Pexels </a>
                     </blockquote>
                     <blockquote>
-                        Photographs are stock images from: <a href="https://www.pexels.com" target="new-tab"> Pexels </a>
-                    </blockquote>
-                    <blockquote>
-                        Last edited: March 2, 2017
+                        Last edited: March 6, 2017
                     </blockquote>
                 </div>
                 
@@ -103,6 +130,10 @@
                 <div class="col-lg-4 col-md-4">
                     <img src="./hands.jpg" class="img-rounded"  alt="Cook" width="275"
                         height="auto">
+					<br>
+					<?php if (isset($_SESSION["loggedin"])):?>
+						<?php echo "Logged in as: " . $_SESSION["user"]; ?>
+					<?php endif ?>
                 </div>
                 
             </div>
