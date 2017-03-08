@@ -56,11 +56,11 @@
                         </li>
 			<li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="./index.html">Ingredients<span class="caret"></span></a>
-		            <ul class="dropdown-menu">
-				<li><a href="./cinnamon.php">Cinnamon</a></li>
-				<li><a href="./parsnip.php">Parsnip</a></li>
-				<li><a href="./marjoram.php">Marjoram</a></li>
-		            </ul>
+				<ul class="dropdown-menu">
+					<li><a href="./cinnamon.php">Cinnamon</a></li>
+					<li><a href="./parsnip.php">Parsnip</a></li>
+					<li><a href="./marjoram.php">Marjoram</a></li>
+				</ul>
 			</li>
                     </ul>
                 </div>
@@ -74,45 +74,45 @@
                 
                 <!-- Add Main Content here -->
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-			<h2><center><font color=#252C3E> Log In </font></center></h2>
                     <br>
                     <?php if (!isset($_SESSION["loggedin"])) :?>
+			<h2><center><font color=#252C3E> Log In </font></center></h2>
 			<!--Show login form if not logged in-->
 			<?php if (isset($_POST['uname']) && $_POST['uname'] == "ct310" && (md5($_POST['psw']) == "3aaec86181ee6974b99d893b4c1eb5b5")) :?>
 				<?php $_SESSION["loggedin"] = 1; $_SESSION["user"] = $_POST['uname']; $_SESSION["time"] = date("h:i:sa");?>
 			<?php elseif (isset($_POST['uname']) && $_POST['uname'] == "benmertz" && (md5($_POST['psw']) == "1751d9d2ea4ca903f6db2847902db7ef")) :?>
 				<?php $_SESSION["loggedin"] = 1; $_SESSION["user"] = $_POST['uname']; $_SESSION["time"] = date("h:i:sa");?>
 			<?php else : ?>
-			<form action = "#" method="POST" style="border:5px solid #6E93AA; margin-bottom: 25px; padding: 10px;" width:35%;>
-				<div class = "container" style="padding:5px;">
-					<label><b>Username: </b></label>
+				<form action = "#" method="POST" style="border:5px solid #6E93AA; margin-bottom: 25px; padding: 10px;" width:35%;>
+					<div class = "container" style="padding:5px;">
+						<label><b>Username: </b></label>
 						<input type="text" placeholder="Enter Username" name="uname">
-				</div>
+					</div>
 						
-				<div class = "container" style="padding:5px;">
-					<label><b>Password: </b></label>
+					<div class = "container" style="padding:5px;">
+						<label><b>Password: </b></label>
 						<input type="password" placeholder="Enter Password" name="psw">
-				</div>
+					</div>
 						
-				<div class = "container" style="padding:15px;">
-					<input type="submit" value="submit">
-				</div>
-			</form>
+					<div class = "container" style="padding:15px;">
+						<input type="submit" value="submit">
+					</div>
+				</form>
 			<?php endif; ?>
+		<?php else :?>
+			<?php echo "<strong>Logged in as: </strong>" . $_SESSION["user"]; ?><br>
+			<?php echo "<strong>Time: </strong>" . $_SESSION["time"]; ?>
 		<?php endif; ?>	
 		<br><br>
                 </div>
                 
                 <!-- Add Image here -->
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <img src="./chef.jpg" class="img-responsive"  alt="Cook" width="575"
-                        height="auto">
-			<br>
+                    <img src="./chef.jpg" class="img-responsive"  alt="Cook" width="575" height="auto">
 			<?php if (isset($_SESSION["loggedin"])):?>
 				<?php echo "Logged in as: " . $_SESSION["user"]; ?>
 			<?php endif ?>
-                </div>
-                
+                </div>   
             </div>
         </div>
         <footer>
