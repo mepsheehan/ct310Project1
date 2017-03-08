@@ -54,6 +54,14 @@
                                 <li><a href="aboutMaddie.html">About Maddie</a></li>
                             </ul>
                         </li>
+			<li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="./index.html">Ingredients<span class="caret"></span></a>
+		            <ul class="dropdown-menu">
+				<li><a href="./cinnamon.php">Cinnamon</a></li>
+				<li><a href="./parsnip.php">Parsnip</a></li>
+				<li><a href="./marjoram.php">Marjoram</a></li>
+		            </ul>
+			</li>
                     </ul>
                 </div>
             </div>
@@ -64,33 +72,8 @@
         <div class="container-fluid2">
             <div class="row visible-on">
                 
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="panel-group">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Ingredients
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <a href="./cinnamon.html" target="new-tab">Cinnamon</a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <a href="./parsnip.html" target="new-tab">Parsnip</a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <a href="./marjoram.html" target="new-tab">Marjoram</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                
                 <!-- Add Main Content here -->
-                <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                     <h2><font color=#252C3E> Welcome to our website!</font></h2>
                     <br>
                     <?php if (!isset($_SESSION["loggedin"])) :?>
@@ -100,7 +83,7 @@
 			<?php elseif (isset($_POST['uname']) && $_POST['uname'] == "benmertz" && (md5($_POST['psw']) == "1751d9d2ea4ca903f6db2847902db7ef")) :?>
 				<?php $_SESSION["loggedin"] = 1; $_SESSION["user"] = $_POST['uname']; $_SESSION["time"] = date("h:i:sa");?>
 			<?php else : ?>
-			<form action = "#" method="POST" style="border:5px solid #6E93AA; margin-bottom: 25px; padding: 10px;" width:35%;">
+			<form action = "#" method="POST" style="border:5px solid #6E93AA; margin-bottom: 25px; padding: 10px;" width:35%;>
 				<div class = "container" style="padding:5px;">
 					<label><b>Username</b></label>
 						<input type="text" placeholder="Enter Username" name="uname">
@@ -127,7 +110,7 @@
                 </div>
                 
                 <!-- Add Image here -->
-                <div class="col-lg-4 col-md-4">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                     <img src="./hands.jpg" class="img-rounded"  alt="Cook" width="275"
                         height="auto">
 			<br>
