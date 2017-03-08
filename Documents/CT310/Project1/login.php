@@ -74,7 +74,7 @@
                 
                 <!-- Add Main Content here -->
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <h2><font color=#252C3E> Welcome to our website!</font></h2>
+			<h2><center><font color=#252C3E> Log In </font></center></h2>
                     <br>
                     <?php if (!isset($_SESSION["loggedin"])) :?>
 			<!--Show login form if not logged in-->
@@ -85,12 +85,12 @@
 			<?php else : ?>
 			<form action = "#" method="POST" style="border:5px solid #6E93AA; margin-bottom: 25px; padding: 10px;" width:35%;>
 				<div class = "container" style="padding:5px;">
-					<label><b>Username</b></label>
+					<label><b>Username: </b></label>
 						<input type="text" placeholder="Enter Username" name="uname">
 				</div>
 						
 				<div class = "container" style="padding:5px;">
-					<label><b>Password</b></label>
+					<label><b>Password: </b></label>
 						<input type="password" placeholder="Enter Password" name="psw">
 				</div>
 						
@@ -101,17 +101,11 @@
 			<?php endif; ?>
 		<?php endif; ?>	
 		<br><br>
-		<blockquote>
-			Photographs are stock images from: <a href="https://www.pexels.com" target="new-tab"> Pexels </a>
-                </blockquote>
-                <blockquote>
-                	Last edited: March 6, 2017
-                </blockquote>
                 </div>
                 
                 <!-- Add Image here -->
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <img src="./hands.jpg" class="img-rounded"  alt="Cook" width="275"
+                    <img src="./hands.jpg" class="img-responsive"  alt="Cook" width="575"
                         height="auto">
 			<br>
 			<?php if (isset($_SESSION["loggedin"])):?>
