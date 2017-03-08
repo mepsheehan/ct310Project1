@@ -103,7 +103,7 @@
                 
                 <!-- Add Image here -->
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <img src="./cinnamon.jpg" class="img-rounded"  alt="Cinn" width="575"
+                    <img src="./cinnamon.jpg" class="img-responsive"  alt="Cinn" width="575"
                         height="auto">
                 </div>
                 
