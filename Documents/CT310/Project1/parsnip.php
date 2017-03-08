@@ -74,14 +74,14 @@
               
                 <!-- Add Main Content here -->
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <h2><font color=#252C3E>Parsnip</font></h2>
+			<h2><center><font color=#252C3E>Parsnip</font></center></h2>
                     <br>
                     
 					<!---Display comment form if logged in--->
 					<div align="center" style="border:5px solid #6E93AA; margin-bottom: 30px; padding:10px;">
 						<?php if (isset($_SESSION["loggedin"])) :?>
 							<form action = "#" method="POST">
-								<label><b>Enter Comment here</label></b><br>
+								<label><b>Enter Comment here</b></label><br>
 								<input type="text" placeholder="Enter Comment" size="30%" name="comment">
 								<input type="submit" value="submit">
 							</form>
@@ -96,17 +96,12 @@
 							<h3><a href = "./login.php">Login</a></h3><br>
 						<?php endif; ?>
 					</div>
-                    <blockquote>
-                        Photographs are stock images from: <a href="https://www.pexels.com" target="new-tab"> Pexels </a>
-                    </blockquote>
-                    <blockquote>
-                        Last edited: March 2, 2017
-                    </blockquote>
+              
                 </div>
                 
                 <!-- Add Image here -->
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <img src="./parsnip.jpg" class="img-rounded"  alt="parsnip" width="575"
+                    <img src="./parsnip.jpg" class="img-responsive"  alt="parsnip" width="575"
                         height="auto">
                 </div>
                 
