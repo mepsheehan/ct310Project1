@@ -54,7 +54,15 @@
                                 <li><a href="aboutMaddie.html">About Maddie</a></li>
                             </ul>
                         </li>
-                        </il>
+			<li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="./index.html">Ingredients<span class="caret"></span></a>
+			    <ul class="dropdown-menu">
+				<li><a href="./cinnamon.php">Cinnamon</a></li>
+				<li><a href="./parsnip.php">Parsnip</a></li>
+				<li><a href="./marjoram.php">Marjoram</a></li>
+			    </ul>
+			</li>
+                        </ul>
                 </div>
             </div>
         </nav>
@@ -63,34 +71,9 @@
         
         <div class="container-fluid2">
             <div class="row visible-on">
-                
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="panel-group">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Ingredients
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <a href="./cinnamon.php" target="new-tab">Cinnamon</a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <a href="./parsnip.php" target="new-tab">Parsnip</a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <a href="./marjoram.php" target="new-tab">Marjoram</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                
+               
                 <!-- Add Main Content here -->
-                <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                     <h2><font color=#252C3E> Marjoram</font></h2>
                     <br>
                     
@@ -123,8 +106,8 @@
                 </div>
                 
                 <!-- Add Image here -->
-                <div class="col-lg-4 col-md-4">
-                    <img src="./marjoram.jpg" class="img-rounded"  alt="marjoram" width="375"
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <img src="./marjoram.jpg" class="img-rounded"  alt="marjoram" width="575"
                         height="auto">
                 </div>
                 
