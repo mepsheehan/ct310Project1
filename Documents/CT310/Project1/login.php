@@ -105,7 +105,7 @@
                 
                 <!-- Add Image here -->
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <img src="./hands.jpg" class="img-responsive"  alt="Cook" width="575"
+                    <img src="./chef.jpg" class="img-responsive"  alt="Cook" width="575"
                         height="auto">
 			<br>
 			<?php if (isset($_SESSION["loggedin"])):?>
