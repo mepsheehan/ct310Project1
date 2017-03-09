@@ -87,7 +87,7 @@
 							</form>
 							<div style="margin-top:50px; margin-bottom:50px;">
 								<?php if (isset($_POST['comment'])) :?>
-									<?php echo "<strong>USER: </strong>" . $_SESSION["user"] . " => " . $_POST['comment']; ?>
+									<?php echo "<strong>USER: </strong>" . $_SESSION["user"] . " => " . filter_var($_POST['comment'], FILTER_SANITIZE_STRING); ?>
 								<?php else :?>
 									<b>No comment has been entered</b>
 								<?php endif; ?>
