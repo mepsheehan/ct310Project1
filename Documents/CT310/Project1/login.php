@@ -76,44 +76,51 @@
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                     <br>
                     <?php if (!isset($_SESSION["loggedin"])) :?>
-			<h2><center><font color=#252C3E> Log In </font></center></h2>
-			<!--Show login form if not logged in-->
-			<?php if (isset($_POST['uname']) && $_POST['uname'] == "ct310" && (md5($_POST['psw']) == "3aaec86181ee6974b99d893b4c1eb5b5")) :?>
-				<?php $_SESSION["loggedin"] = 1; $_SESSION["user"] = $_POST['uname']; $_SESSION["time"] = date("h:i:sa");?>
-			<?php elseif (isset($_POST['uname']) && $_POST['uname'] == "benmertz" && (md5($_POST['psw']) == "1751d9d2ea4ca903f6db2847902db7ef")) :?>
-				<?php $_SESSION["loggedin"] = 1; $_SESSION["user"] = $_POST['uname']; $_SESSION["time"] = date("h:i:sa");?>
-			<?php elseif (isset($_POST['uname']) && $_POST['uname'] == "wombat" && (md5($_POST['psw']) == "6395920c5e0625bb6919723c396041c2")) :?>
-				<?php $_SESSION["loggedin"] = 1; $_SESSION["user"] = $_POST['uname']; $_SESSION["time"] = date("h:i:sa");?>
-			<?php else : ?>
-				<form action = "#" method="POST" style="border:5px solid #6E93AA; margin-bottom: 25px; padding: 10px;" width:35%;>
-					<div class = "container" style="padding:5px;">
-						<label><b>Username: </b></label>
-						<input type="text" placeholder="Enter Username" name="uname">
-					</div>
+				<!--Show login form if not logged in-->
+				<?php if (isset($_POST['uname']) && $_POST['uname'] == "ct310" && (md5($_POST['psw']) == "3aaec86181ee6974b99d893b4c1eb5b5")) :?>
+					<?php $_SESSION["loggedin"] = 1; $_SESSION["user"] = $_POST['uname']; $_SESSION["time"] = date("h:i:sa");?>
+				<?php elseif (isset($_POST['uname']) && $_POST['uname'] == "benmertz" && (md5($_POST['psw']) == "1751d9d2ea4ca903f6db2847902db7ef")) :?>
+					<?php $_SESSION["loggedin"] = 1; $_SESSION["user"] = $_POST['uname']; $_SESSION["time"] = date("h:i:sa");?>
+				<?php elseif (isset($_POST['uname']) && $_POST['uname'] == "wombat" && (md5($_POST['psw']) == "6395920c5e0625bb6919723c396041c2")) :?>
+					<?php $_SESSION["loggedin"] = 1; $_SESSION["user"] = $_POST['uname']; $_SESSION["time"] = date("h:i:sa");?>
+				<?php else : ?>
+					<form action = "#" method="POST" style="border:5px solid #6E93AA; margin-bottom: 25px; padding: 10px;" width:35%;>
+						<div align="center"><h3>Log In</h3></div>
+						<div class = "container" style="padding:5px;">
+							<label><b>Username: </b></label>
+							<input type="text" placeholder="Enter Username" name="uname">
+						</div>
 						
-					<div class = "container" style="padding:5px;">
-						<label><b>Password: </b></label>
-						<input type="password" placeholder="Enter Password" name="psw">
-					</div>
+						<div class = "container" style="padding:5px;">
+							<label><b>Password: </b></label>
+							<input type="password" placeholder="Enter Password" name="psw">
+						</div>
 						
-					<div class = "container" style="padding:15px;">
-						<input type="submit" value="submit">
-					</div>
-				</form>
-			<?php endif; ?>
-		<?php else :?>
-			<?php echo "<strong>Logged in as: </strong>" . $_SESSION["user"]; ?><br>
-			<?php echo "<strong>Time: </strong>" . $_SESSION["time"]; ?>
-		<?php endif; ?>	
-		<br><br>
+						<div class = "container" style="padding:15px;">
+							<input type="submit" value="submit">
+						</div>
+					</form>
+				<?php endif; ?>
+			<?php endif; ?>	
+			<br><br>
                 </div>
                 
                 <!-- Add Image here -->
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <img src="./chef.jpg" class="img-responsive"  alt="Cook" width="575" height="auto">
 			<?php if (isset($_SESSION["loggedin"])):?>
-				<?php echo "Logged in as: " . $_SESSION["user"]; ?>
+				<?php echo "<strong>Logged in as: " . $_SESSION["user"] . "</strong>";?>
+				<form action="#" style="margin:20px;" method="GET">
+					<input type="submit" name="logout" value="Logout"/>
+				</form>
+				<?php
+					if(isset($_GET['logout'])){
+						session_unset();
+						session_destroy();
+						header("Location: ./login.php");
+					}?>
 			<?php endif ?>
+                    <img src="./chef.jpg" class="img-responsive" style="margin-bottom:10px;" alt="Cook" width="575"
+                        height="auto">
                 </div>   
             </div>
         </div>
