@@ -73,7 +73,7 @@
             <div class="row visible-on">
               
                 <!-- Add Main Content here -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 			<h2><center><font color=#252C3E>Parsnip</font></center></h2>
                     <br>
                     
@@ -98,9 +98,21 @@
 					</div>
               
                 </div>
+		
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<blockquote>
+				Parsnip is a root vegetable. It has a tuberous root much like a potato and is related to carrot and parsley. 
+				Originally cultivated by the romans and native to Eurasia, parsnip is high in minerals and vitamins. 
+				It is most commonly used in both soups and casseroles to add a rich, unique flavor. 
+				It can be prepared and eaten either raw or cooked, fried or thinly sliced. 
+				</blockquote>
+			<blockquote>
+				Tired of regular macaroni and cheese? Our suggestion is to mix things up my adding parsnip to a macaroni cassarole. 
+				</blockquote>
+		</div>
                 
                 <!-- Add Image here -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <img src="./parsnip.jpg" class="img-responsive"  alt="parsnip" width="575"
                         height="auto">
                 </div>
