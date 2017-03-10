@@ -74,7 +74,7 @@
                 
                 
                 <!-- Add Main Content here -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 
 			<h2><center><font color=#252C3E> Cinnamon </font></center></h2>
                     <br>
@@ -100,9 +100,18 @@
 					</div>
 					
                 </div>
-                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<blockquote>
+				Cinnamon is a spice derived from the Cinnamomum tree species. 
+				It is native to India, but gained popularity worldwide. Cinnamon can be used in a variety of 
+				foods and can be found particularly in Mecixan and Turkish cuisine. 
+				</blockquote>
+			<blockquote>
+				Our suggestion is to try topping your favorite ice cream or a cup of hot chocolate with a dash of cinnamon!
+				</blockquote>
+		</div>
                 <!-- Add Image here -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <img src="./cinnamon.jpg" class="img-responsive"  alt="Cinn" width="575"
                         height="auto">
                 </div>
