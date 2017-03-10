@@ -73,7 +73,7 @@
             <div class="row visible-on">
                
                 <!-- Add Main Content here -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 			<h2><center><font color=#252C3E> Marjoram</font></center></h2>
                     <br>
                     
@@ -97,9 +97,19 @@
 						<?php endif; ?>
 			</div>
                 </div>
+	        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<blockquote>
+				Marjoram, also known as pot marjoram, is an herb indigenous to Cyprus and southern Turkey. 
+				In can be used both fresh and dried in countless recipes. 
+				While very closely related to oregano, marjoram us known for having a lighter, more citrus flavor.
+				</blockquote>
+			<blockquote>
+				Our suggestion is to try sprinkling marjoram into a cup of tomato soup!
+				</blockquote>
+		</div>
                 
                 <!-- Add Image here -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <img src="./marjoram.jpg" class="img-responsive"  alt="marjoram" width="575"
                         height="auto">
                 </div>
